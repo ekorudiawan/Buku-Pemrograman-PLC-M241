@@ -77,7 +77,7 @@ Langkah-langkah untuk membuat POU pada software SoMachine V4.1 adalah sebagai be
 3. Tambahkan simbol contact NO dan coil pada Ladder Diagram Editor dengan cara memilih simbol pada menu berikut ini  
    ![](/assets/2018-01-21_204519.png)![](/assets/2018-01-21_204537.png)
 
-4. Berikan variabel pada contact NO dan coil yang telah dibuat. Cara memberikan variabel dapat dilakukan dengan cara mengklik tanda tanya, kemudian pilih tombol "..."   
+4. Berikan variabel pada contact NO dan coil yang telah dibuat. Cara memberikan variabel dapat dilakukan dengan cara mengklik tanda tanya, kemudian pilih tombol "..."  
    ![](/assets/2018-01-21_204558.png)
 
 5. Pada window Input Assistant pilihlah variabel yang telah dibuat tadi yaitu variabel TOMBOL. Kemudian klik OK  
@@ -86,7 +86,7 @@ Langkah-langkah untuk membuat POU pada software SoMachine V4.1 adalah sebagai be
 6. Lakukan hal yang sama pada coil dengan memilih variabel LAMPU. Sehingga program akhir Anda menjadi seperti berikut ini  
    ![](/assets/2018-01-21_204650.png)
 
-7. Masukkan program POU yang telah dibuat pada MAST task. Caranya dengan melakukan drag and drop POU ke area MAST   
+7. Masukkan program POU yang telah dibuat pada MAST task. Caranya dengan melakukan drag and drop POU ke area MAST  
    ![](/assets/2018-01-21_221546.png)
 
 8. Lakukan kompilasi program untuk memastikan tidak ada error pada program. Caranya dengan menekan menu Build atau menekan tombol keyboard F11  
@@ -99,54 +99,85 @@ Langkah-langkah untuk membuat POU pada software SoMachine V4.1 adalah sebagai be
 
 Langkah-langkah untuk melakukan simulasi program yang telah dibuat adalah sebagai berikut :
 
-1. Klik kanan pada menu Application kemudian pilih Add Object dan Visualization
+1. Klik kanan pada menu Application kemudian pilih Add Object dan Visualization  
    ![](/assets/2018-01-21_220754.png)
 
-2. Buatlah nama khusus untuk melakukan simulasi. Pada contoh kali ini bernama Simulasi\_Program\_1. Lanjutkan dengan menekan tombol Add. Selanjutnya window Visualization editor akan muncul.
+2. Buatlah nama khusus untuk melakukan simulasi. Pada contoh kali ini bernama Simulasi\_Program\_1. Lanjutkan dengan menekan tombol Add. Selanjutnya window Visualization editor akan muncul.  
    ![](/assets/2018-01-21_220834.png)  
    ![](/assets/2018-01-21_220852.png)
 
-3. Tambahkan komponen Push Switch pada Visualization editor. Caranya dengan melakukan drag and drop komponen Push Switch pada Toolbox sebelah kanan ke Visualization Editor.
+3. Tambahkan komponen Push Switch pada Visualization editor. Caranya dengan melakukan drag and drop komponen Push Switch pada Toolbox sebelah kanan ke Visualization Editor.  
    ![](/assets/2018-01-21_220917.png)  
    ![](/assets/2018-01-21_220947.png)
 
-4. Berikan nama variabel pada komponen Push Switch dengan cara mengklik komponen terlebih dahulu, lalu merubah properties Variable.
+4. Berikan nama variabel pada komponen Push Switch dengan cara mengklik komponen terlebih dahulu, lalu merubah properties Variable.  
    ![](/assets/2018-01-21_221019.png)
 
-5. Pilih variabel TOMBOL untuk mensimulasikan komponen Push Switch
+5. Pilih variabel TOMBOL untuk mensimulasikan komponen Push Switch  
    ![](/assets/2018-01-21_221031.png)
 
-6. Tambahkan komponen Lamp ke Visualization Editor dan berikan nama variabel LAMPU
+6. Tambahkan komponen Lamp ke Visualization Editor dan berikan nama variabel LAMPU  
    ![](/assets/2018-01-21_221057.png)
 
-7. Aktifkan menu simulasi dengan cara memilih menu Online kemudian pilih Simulation
+7. Aktifkan menu simulasi dengan cara memilih menu Online kemudian pilih Simulation  
    ![](/assets/2018-01-21_221320.png)
 
-8. Lakukan login ke Device Simulator dengan cara memilih menu Login atau menekan tombol keyboard ALT + F8
+8. Lakukan login ke Device Simulator dengan cara memilih menu Login atau menekan tombol keyboard ALT + F8  
    ![](/assets/2018-01-21_221215.png)
 
-9. Jika muncul window untuk memilih controller, maka lakukan klik pada CODESYS Controller
+9. Jika muncul window untuk memilih controller, maka lakukan klik pada CODESYS Controller  
    ![](/assets/2018-01-21_221240.png)
 
-10. Akan muncul pesan Warning. Lanjutkan dengan menekan kombinasi ALT + F pada keyboard 
+10. Akan muncul pesan Warning. Lanjutkan dengan menekan kombinasi ALT + F pada keyboard   
     ![](/assets/2018-01-21_221248.png)
 
-11. Lanjutkan proses Login jika muncul window konfirmasi
+11. Lanjutkan proses Login jika muncul window konfirmasi  
     ![](/assets/2018-01-21_221348.png)
 
-12. Pilih Yes jika muncul Window yang meminta konfirmasi proses download program
+12. Pilih Yes jika muncul Window yang meminta konfirmasi proses download program  
     ![](/assets/2018-01-21_221401.png)
 
-13. Setelah proses download program berhasil, akan muncul status di bagian bawah bahwa kondisi controller dalam keadaan STOP. Aktifkan controller dengan cara menekan menu Run.
+13. Setelah proses download program berhasil, akan muncul status di bagian bawah bahwa kondisi controller dalam keadaan STOP. Aktifkan controller dengan cara menekan menu Run.  
     ![](/assets/2018-01-21_221423.png)
 
-14. Setelah controller dalam mode running, program POU yang telah Anda dapat dimonitor kondisinya menjadi seperti berikut ini
+14. Setelah controller dalam mode running, program POU yang telah Anda dapat dimonitor kondisinya menjadi seperti berikut ini  
     ![](/assets/2018-01-21_221703.png)
 
-15. Lakukan ujicoba dengan menekan tombol pada window Visualization Editor kemudian perhatikan nyala lampu. Lampu akan menyala jika tombol ditekan. Untuk mematikan lampu tekan sekali lagi pada tombol.
+15. Lakukan ujicoba dengan menekan tombol pada window Visualization Editor kemudian perhatikan nyala lampu. Lampu akan menyala jika tombol ditekan. Untuk mematikan lampu tekan sekali lagi pada tombol.  
     ![](/assets/2018-01-21_221739.png)
 
-## 1.5 Melakukan Simulasi Program ???
+## 1.5 Men-download Program ke PLC
+
+Langkah-langkah melakukan download program ke PLC adalah sebagai berikut ini :
+
+1. Ubahlah variabel TOMBOL dan LAMPU yang telah dibuat sebelumnya dengan menambahkan informasi address pada variabel tersebut
+   ![](/assets/2018-01-21_225317.png)
+
+2. Nonaktifkan mode Simulasi karena saat ini program akan di-download langsung ke PLC
+   ![](/assets/2018-01-21_225351.png)
+
+3. Klik dua kali pada menu MyController pada Device Tree
+   ![](/assets/2018-01-21_230252.png)
+
+4. Klik dua kali pada controller yang dugunakan yaitu TM241CE40R. Kemudian klik menu Login
+   ![](/assets/2018-01-22_000116.png)
+
+5. Muncul konfirmasi untuk melakukan Login ke controller. Pilih Yes untuk melanjutkan
+   ![](/assets/2018-01-22_000137.png)
+
+6. Lakukan konfirmasi untuk membuat aplikasi baru pada controller
+   ![](/assets/2018-01-22_000156.png)
+
+7. Program akan di-download ke PLC. Tunggu sampai prosesnya selesai. Secara default setelah program di-download PLC akan berada pada kondisi STOP. Klik menu RUN untuk mengaktifkan PLC
+   ![](/assets/2018-01-22_000218.png)
+
+8. Lakukan konfirmasi untuk mengaktifkan mode RUN pada PLC
+   ![](/assets/2018-01-22_000225.png)
+
+9. Jika proses diatas sukses, program Anda dapat dimonitor kondisinya pada tahap kali ini
+   ![](/assets/2018-01-22_000401.png)
+
+10. Hubungkan tombol dan lampu pada input dan outpu terminal PLC. Tombol pada address %IX0.0 dan Lampu pada address QX0.4. Lakukan ujicoba program dengan cara menekan tombol.
 
 
 
