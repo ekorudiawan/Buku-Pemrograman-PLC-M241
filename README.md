@@ -1,4 +1,2 @@
 # Pemrograman PLC M241
-
- 
-
+Buku ini menjelaskan tentang tata cara pemrograman PLC Schneider M241. Bahasa pemrograman yang dijelaskan pada buku ini menggunakan standar IEC-61131-3 yang mencakup bahasa Ladder Diagram, Instruction List, Function Block Diagram, CFC, dan SFC.
